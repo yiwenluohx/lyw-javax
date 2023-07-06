@@ -1,17 +1,16 @@
-package lyw.javax;
+package lyw.javax.testmap;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+
+import java.util.*;
 
 /**
  * @Author: luohx
  * @Description: 集合map
  * @Date: 2021/2/23 14:46
  */
-public class MapApplication {
+public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
 
         int mod = 3 % 4;
         System.out.println("取模mod=" + mod);
@@ -47,6 +46,4 @@ public class MapApplication {
 
         System.out.println("123");
     }
-
-
 }
