@@ -21,6 +21,7 @@
         <module>javax-Linked</module>
         <module>javax-custom-lock</module>
         <module>javax-velocity</module>
+        <module>javax-func</module>
     </modules>
 
     <properties>
