@@ -1,6 +1,7 @@
 package com.study.javax;
 
 import com.study.javax.test01.Calculate;
+import com.study.javax.test01.RequestTypeEnum;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -15,6 +16,12 @@ public class JavaxFuncApplication {
     public static void main(String[] args) {
         record(() -> System.out.println("函数式编程")
                 , "数据异常,请排查");
+
+        //遍历枚举
+        record(() -> {
+            RequestTypeEnum.allCode.get().forEach(k -> System.out.println("枚举code：" + k));
+        }, "遍历枚举异常");
+
 
         SpringApplication.run(JavaxFuncApplication.class, args);
     }
